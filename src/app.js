@@ -2,6 +2,12 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 9000;
 
+/**
+ * setting up the router
+ * registering the router via express;
+ */
+const router = require('./routes/routes');
+app.use(router);
 
 /**
  * server listening
