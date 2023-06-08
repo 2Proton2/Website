@@ -1,14 +1,11 @@
 const express = require('express');
 const router = new express.Router;
+const controller = require('../../middleware/controller');
 
-router.get('/', async(req, res) => {
-    try{
-        res.status(200);
-        res.send("all working fine for default page");
-    }
-    catch(err) {
-        console.log(err);
-    }
-});
+/**
+ * defining the routes
+ */
+router.get('/students', controller.getStudentsFunc);
+router.get('/students/:id', controller.getStudentsByIdFunc)
 
 module.exports = router;
