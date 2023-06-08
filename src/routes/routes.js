@@ -6,6 +6,7 @@ const controller = require('../../middleware/controller');
  * defining the routes
  */
 router.get('/students', controller.getStudentsFunc);
-router.get('/students/:id', controller.getStudentsByIdFunc)
+router.get('/students/:id', controller.getStudentsByIdFunc);
+router.post('/students', controller.addStudentFunc);
 
 module.exports = router;
