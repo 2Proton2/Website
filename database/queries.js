@@ -1,10 +1,6 @@
-const getAllStudent = () => {
-    return `SELECT * FROM students`
-};
+const getAllStudent = `SELECT * FROM students`;
+const getStudentById = `SELECT * FROM students where id = $1`;
 
-const getStudentById = (id) => {
-    return `SELECT * FROM students where id = ${id}`;
-}
 module.exports = {
     getAllStudent,
     getStudentById
