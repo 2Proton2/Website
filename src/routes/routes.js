@@ -1,6 +1,6 @@
 const express = require('express');
 const router = new express.Router;
-const controller = require('../../middleware/controller');
+const controller = require('../controller');
 
 /**
  * defining the routes
